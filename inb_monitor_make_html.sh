@@ -1,5 +1,5 @@
 #!/bin/bash
-html=index.html
+html=/misc/penfield/lconcha/inb_monitor/index.html
 
 
 echo "
