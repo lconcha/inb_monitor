@@ -1,0 +1,104 @@
+
+<html>
+ <head>
+<style>
+code {
+  font-family: Consolas,courier new;
+  color: black;
+  background-color: #f1f1f1;
+  padding: 2px;
+}
+</style>
+ </head>
+ <body>
+ <b> Status of Don Clusterio <br /></b>
+
+
+<b> vie 19 jul 2024 19:44:52 CST <br /><br /></b>
+<b>NFS disks <br /></b>
+    <code>
+White list: /home/inb/soporte/inb_cluster_whiteList.txt<br />
+          arwen: ....WW...........WW........................WW.......OK<br />
+         austin: ....WW...........WW........................WW.......OK<br />
+          bloch: ....WW...........WW........................WW.......OK<br />
+          brown: ....WW...........WW........................WW.......OK<br />
+       cannabis:   INFO: cannabis is  whitelisted, will not check.<br />
+           carr: ....WW...........WW........................WW.......OK<br />
+        charcot: ....WW...........WW........................WW.......OK<br />
+      claustrum: ....WW...........WW........................WW.......OK<br />
+        copula2: ....WW...........WW........................WW.......OK<br />
+         copula:   INFO: copula is declared as unreachable by SGE, will not check.<br />
+....WW...........WW........................WW.......OK<br />
+       damadian: ....WW...........WW........................WW.......OK<br />
+          ernst: ....WW...........WW........................WW.......OK<br />
+          euler: ....WW...........WW........................WW.......OK<br />
+         evarts:   INFO: evarts is  whitelisted, will not check.<br />
+        fourier: ....WW...........WW........................WW.......OK<br />
+        geminis: ....WW...........WW........................WW.......OK<br />
+          giora: ....WW...........WW........................WW.......OK<br />
+         larmor: ....WW...........WW........................WW.......OK<br />
+      lauterbur: ....WW...........WW........................WW.......OK<br />
+      mansfield: ....WW...........WW........................WW.......OK<br />
+       milagros: ....WW...........WW........................WW.......OK<br />
+        nyquist: ....WW...........WW........................WW.......OK<br />
+        purcell: ....WW...........WW........................WW.......OK<br />
+           rabi: ....WW...........WW........................WW.......OK<br />
+         rhesus: ....WW...........WW........................WW.......OK<br />
+        ridelim: ....WW...........WW........................WW.......OK<br />
+    sherrington: ....WW...........WW........................WW.......OK<br />
+         tanner:   INFO: tanner is  whitelisted, will not check.<br />
+          tesla: ....WW...........WW........................WW.......OK<br />
+          tezca: ....WW...........WW........................WW.......OK<br />
+       tournoux: ....WW...........WW........................WW.......OK<br />
+<br />
+  Note: [W] means a whitelisted or disabled mount point (not an error).<br />
+  whitelist file is /home/inb/soporte/inb_cluster_whiteList.txt<br />
+<br />
+    Whitelisted node(s)/mount(s): cannabis evarts mountcastle tanner <br />
+    Nodes recognized as down by SGE: cannabis copula evarts tanner<br />
+  <br />
+    </code>
+<b>qhost <br /></b>
+    <code>
+HOSTNAME                ARCH         NCPU NSOC NCOR NTHR  LOAD  MEMTOT  MEMUSE  SWAPTO  SWAPUS<br />
+----------------------------------------------------------------------------------------------<br />
+global                  -               -    -    -    -     -       -       -       -       -<br />
+arwen                   lx-amd64        8    1    4    8  1.91   31.2G    5.6G   18.6G  789.2M<br />
+austin                  lx-amd64        4    1    4    4  0.10   15.5G    1.7G   30.8G     0.0<br />
+bloch                   lx-amd64        8    1    4    8  0.40   15.6G    1.3G   14.9G     0.0<br />
+brown                   lx-amd64        8    1    4    8  0.30   15.5G    1.6G   14.9G     0.0<br />
+cannabis                lx-amd64        8    1    4    8     -   31.2G       -   18.6G       -<br />
+carr                    lx-amd64        8    1    4    8  0.40   19.5G    4.1G   34.9G     0.0<br />
+charcot                 lx-amd64        8    1    4    8  0.54   58.8G    4.3G   14.0G     0.0<br />
+claustrum               lx-amd64        8    1    4    8  0.68   23.3G    1.8G   18.6G  545.0M<br />
+copula                  lx-amd64        4    1    4    4     -   31.3G       -   18.6G       -<br />
+copula2                 lx-amd64        4    1    4    4  0.25   15.5G    3.9G   18.6G     0.0<br />
+damadian                lx-amd64       20    1   12   20  0.26   31.1G    2.4G   14.9G     0.0<br />
+ernst                   lx-amd64        8    1    4    8  0.80   31.3G    4.7G   75.9G     0.0<br />
+euler                   lx-amd64       12    1    6   12  0.28   31.1G    1.6G   14.0G     0.0<br />
+evarts                  lx-amd64        8    1    4    8     -   19.4G       -   18.6G       -<br />
+fourier                 lx-amd64        8    1    8    8  0.35   31.1G    5.1G    2.0G  512.0K<br />
+geminis                 lx-amd64       16    1    8   16  0.24   62.6G   14.1G   18.6G    1.0M<br />
+giora                   lx-amd64        4    1    4    4  0.28   15.5G    1.7G   18.6G    1.0M<br />
+hahn                    lx-amd64        8    1    4    8  7.02   31.3G   12.2G   14.9G  210.5M<br />
+jasper                  lx-amd64        8    1    4    8  2.12   27.3G    3.5G   18.6G     0.0<br />
+larmor                  lx-amd64       32    1   24   32  0.15   62.6G    3.5G   29.8G     0.0<br />
+lauterbur               lx-amd64       32    1   24   32  0.35   62.6G    8.7G   29.8G    2.0M<br />
+mansfield               lx-amd64        8    1    4    8  0.17   23.4G    8.0G   19.0G  780.0K<br />
+milagros                lx-amd64       16    1    8   16  1.21   78.4G    4.5G   14.0G    2.5M<br />
+mountcastle             -               -    -    -    -     -       -       -       -       -<br />
+nyquist                 lx-amd64       16    1    8   16  0.37   62.7G    7.8G   29.8G    1.8M<br />
+purcell                 lx-amd64        8    1    4    8  0.63    7.7G    3.3G   14.9G  384.5M<br />
+rabi                    lx-amd64        8    1    4    8  0.81   31.3G    3.1G   75.9G    1.0M<br />
+rhesus                  lx-amd64        8    1    4    8  0.31   19.5G    1.6G   30.7G     0.0<br />
+ridelim                 lx-amd64       12    1    6   12  0.26   31.2G    1.2G   14.9G     0.0<br />
+sherrington             lx-amd64        8    1    4    8  0.80   19.5G    5.9G   34.9G  512.0K<br />
+tanner                  lx-amd64        8    1    4    8     -   15.6G       -   14.9G       -<br />
+tesla                   lx-amd64        6    1    6    6  1.46   15.3G    9.0G   14.0G  227.4M<br />
+tezca                   lx-amd64        4    1    4    4  1.95   31.3G    4.6G   14.0G     0.0<br />
+tournoux                lx-amd64       16    1    8   16  0.27   62.6G    5.2G   18.6G     0.0<br />
+    </code>
+
+ </body>
+</html>
+

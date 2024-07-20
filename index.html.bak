@@ -1,0 +1,59 @@
+<html>
+ <head>
+<style>
+code {
+  font-family: Consolas,"courier new";
+  color: black;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+</style>
+ </head>
+ <body>
+    <b>NFS status</b>
+    <p>inb_cluster_NFS_status_simple.sh</p>
+    <code>
+     White list: /home/inb/soporte/inb_cluster_whiteList.txt
+          arwen: ....WW...........WW........................WW.......OK
+         austin: ....WW...........WW........................WW.......OK
+          bloch: ....WW...........WW........................WW.......OK
+          brown: ....WW...........WW........................WW.......OK
+       cannabis:   INFO: cannabis is  whitelisted, will not check.
+           carr: ....WW...........WW........................WW.......OK
+        charcot: ....WW...........WW........................WW.......OK
+      claustrum: ....WW...........WW........................WW.......OK
+        copula2: ....WW...........WW........................WW.......OK
+         copula:   INFO: copula is declared as unreachable by SGE, will not check.
+....WW...........WW........................WW.......OK
+       damadian: ....WW...........WW........................WW.......OK
+          ernst: ....WW...........WW........................WW.......OK
+          euler: ....WW...........WW........................WW.......OK
+         evarts:   INFO: evarts is  whitelisted, will not check.
+        fourier: ....WW...........WW........................WW.......OK
+        geminis: ....WW...........WW........................WW.......OK
+          giora: ....WW...........WW........................WW.......OK
+         larmor: ....WW...........WW........................WW.......OK
+      lauterbur: ....WW...........WW........................WW.......OK
+      mansfield: ....WW...........WW........................WW.......OK
+       milagros: ....WW...........WW........................WW.......OK
+        nyquist: ....WW...........WW........................WW.......OK
+        purcell: ....WW...........WW........................WW.......OK <br />
+           rabi: ....WW...........WW........................WW.......OK
+         rhesus: ....WW...........WW........................WW.......OK
+        ridelim: ....WW...........WW........................WW.......OK
+    sherrington: ....WW...........WW........................WW.......OK
+
+         tanner:   INFO: tanner is  whitelisted, will not check.
+          tesla: ....WW...........WW........................WW.......OK
+          tezca: ....WW...........WW........................WW.......OK
+       tournoux: ....WW...........WW........................WW.......OK
+
+  Note: [W] means a whitelisted or disabled mount point (not an error).
+  whitelist file is /home/inb/soporte/inb_cluster_whiteList.txt
+
+    Whitelisted node(s)/mount(s): cannabis evarts mountcastle tanner 
+    Nodes recognized as down by SGE: cannabis copula evarts tanner
+  </code>
+ </body>
+</html>
