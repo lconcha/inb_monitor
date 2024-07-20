@@ -1,6 +1,7 @@
 #!/bin/bash
 html=/misc/penfield/lconcha/inb_monitor/index.html
-
+tmp_html=/misc/penfield/lconcha/inb_monitor/tmp_index.html
+here=$(dirname $0)
 
 echo "
 <html>
@@ -17,19 +18,21 @@ code {
  <body>
  <b> Status of Don Clusterio <br /></b>
 
-" > $html
+" > $tmp_html
 the_date=$(date)
-echo "<b> $the_date <br /><br /></b>"  >> $html
+echo "<b> $the_date <br /><br /></b>"  >> $tmp_html
 
-for f in modulos/*.sh;
+for f in ${here}/modulos/*.sh;
 do
   echo "Running $f"
-  $f $html
+  $f $tmp_html
+  echo "<br />"  >> $tmp_html
 done
 
 echo "
  </body>
 </html>
-" >> $html
+" >> $tmp_html
 
+mv $tmp_html $html
 echo "Created $html"
