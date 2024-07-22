@@ -21,8 +21,8 @@ path_add /home/inb/lconcha/.cargo/bin
 
 
 # Define files
-html=/misc/penfield/lconcha/inb_monitor/index.html
-tmp_html=/misc/penfield/lconcha/inb_monitor/tmp_index.html
+html=/misc/penfield/soporte/inb_monitor/index.html
+tmp_html=/misc/penfield/soporte/inb_monitor/tmp_index.html
 here=$(dirname $0)
 
 
