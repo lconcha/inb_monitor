@@ -2,12 +2,15 @@
 html=$1
 
 
-qhost > tmp_qhost.txt
+# qhost > tmp_qhost.txt
 
-sed 's/$/<br \/>/g' ./tmp_qhost.txt > tmp_qhost.html
+# sed 's/$/<br \/>/g' ./tmp_qhost.txt > tmp_qhost.html
 
 
-echo "<b>qhost <br /></b>"  >> $html
-echo "    <code>" >> $html
-cat tmp_qhost.html >> $html
-echo "    </code>" >> $html
+# echo "<b>qhost <br /></b>"  >> $html
+# echo "    <code>" >> $html
+# cat tmp_qhost.html >> $html
+# echo "    </code>" >> $html
+
+
+to-html "qhost" >> $html

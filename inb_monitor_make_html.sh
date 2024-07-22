@@ -1,4 +1,6 @@
 #!/bin/bash
+path_add /home/inb/lconcha/.cargo/bin
+
 html=/misc/penfield/lconcha/inb_monitor/index.html
 tmp_html=/misc/penfield/lconcha/inb_monitor/tmp_index.html
 here=$(dirname $0)
