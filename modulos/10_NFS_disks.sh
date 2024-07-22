@@ -5,7 +5,7 @@ html=$1
 # sed 's/$/<br \/>/g' ./tmp_nfs_status.txt > tmp_nfs_status.html
 
 
-# echo "<b>NFS disks <br /></b>"  >> $html
+# echo "<b>NFS disks <br /></b>"  >>n $html
 # echo "    <code>" >> $html
 # cat tmp_nfs_status.html >> $html
 # echo "    </code>" >> $html
