@@ -40,7 +40,7 @@ tout=60
 echo "
 <html>
  <body>
- <b> Status of Don Clusterio <br /></b>
+ <h1> Status of Don Clusterio <br /></h1>
 
 " > $tmp_html
 the_date=$(date)
@@ -50,6 +50,7 @@ echo "<b> $the_date <br /><br /></b>"  >> $tmp_html
 for f in ${here}/modulos/*.sh;
 do
   echo "Running $f"
+  echo "<hr>" >> $tmp_html
   timeout $tout $f $tmp_html
   if [[ $? == 124 ]]                                                                             
   then

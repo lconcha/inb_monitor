@@ -1,7 +1,7 @@
 #!/bin/bash
 html=$1
 
-
+echo "<h2>Status of SGE hosts (computers) <br /></h2>"  >> $html
 to-html "qhost" >> $html
 
 
