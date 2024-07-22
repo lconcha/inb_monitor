@@ -1,4 +1,17 @@
 #!/bin/bash
+function path_add() {
+  rel_path_to_add=$1
+  path_to_add=$(readlink -f $rel_path_to_add)
+  if [ -d $path_to_add ]
+  then
+    export PATH=${path_to_add}:${PATH}
+    echolor green "[INFO] Added to PATH: $path_to_add"
+  else
+    echolor red "[ERROR] Cannot add to PATH, directory does not exist: $path_to_add"
+  fi
+}
+
+
 path_add /home/inb/lconcha/.cargo/bin
 
 html=/misc/penfield/lconcha/inb_monitor/index.html
@@ -7,16 +20,6 @@ here=$(dirname $0)
 
 echo "
 <html>
- <head>
-<style>
-code {
-  font-family: Consolas,"courier new";
-  color: black;
-  background-color: #f1f1f1;
-  padding: 2px;
-}
-</style>
- </head>
  <body>
  <b> Status of Don Clusterio <br /></b>
 
