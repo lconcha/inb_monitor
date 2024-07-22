@@ -5,6 +5,13 @@
 # https://github.com/Aloso/to-html
 
 
+# check we got what we need
+if [ -z $(which qstat) ]
+then
+ source /opt/sge/fmrilab/common/settings.sh 
+fi
+module load inb_tools
+
 # Put to-html on the path
 function path_add() {
   rel_path_to_add=$1
@@ -25,6 +32,9 @@ html=/misc/penfield/soporte/inb_monitor/index.html
 tmp_html=/misc/penfield/soporte/inb_monitor/tmp_index.html
 here=$(dirname $0)
 
+# Define timeout
+tout=60
+
 
 # Begin cretion of html file
 echo "
@@ -40,7 +50,12 @@ echo "<b> $the_date <br /><br /></b>"  >> $tmp_html
 for f in ${here}/modulos/*.sh;
 do
   echo "Running $f"
-  $f $tmp_html
+  timeout $tout $f $tmp_html
+  if [[ $? == 124 ]]                                                                             
+  then
+    echo "[ERROR]  Command $f took too long (more than $tout s) to finish"
+    echo "<mark> [ERROR] Command $f took too long (more than $tout s) to finish </mark>" >> $tmp_html
+  fi 
   echo "<br />"  >> $tmp_html
 done
 
