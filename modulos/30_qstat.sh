@@ -1,7 +1,10 @@
 #!/bin/bash
 html=$1
 
+to-html "qstat -u '*'" >> $html
 
+
+# OLD VERSION
 # qstat -u "*" > tmp_qstat.txt
 
 # sed 's/$/<br \/>/g' ./tmp_qstat.txt > tmp_qstat.html
@@ -13,4 +16,3 @@ html=$1
 # echo "    </code>" >> $html
 
 
-to-html "qstat -u '*'" >> $html

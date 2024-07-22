@@ -2,6 +2,10 @@
 html=$1
 
 
+to-html "qhost" >> $html
+
+
+# OLD VERSION
 # qhost > tmp_qhost.txt
 
 # sed 's/$/<br \/>/g' ./tmp_qhost.txt > tmp_qhost.html
@@ -11,6 +15,3 @@ html=$1
 # echo "    <code>" >> $html
 # cat tmp_qhost.html >> $html
 # echo "    </code>" >> $html
-
-
-to-html "qhost" >> $html
