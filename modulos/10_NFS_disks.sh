@@ -3,7 +3,8 @@ html=$1
 file_flag=$(dirname $html)/ThereAreNFSErrors
 
 #inb_cluster_NFS_status_simple.sh
-#to-html "inb_cluster_NFS_status_simple.sh" > $html
+#echo "<h2>NFS disks <br /></h2>"  >> $html
+#to-html "inb_cluster_NFS_status_simple.sh -T" > $html
 ##### HEY! timeout does not play nice with to-html
 
 
@@ -11,7 +12,7 @@ file_flag=$(dirname $html)/ThereAreNFSErrors
 
 
 
-# OLD VERSION
+# # OLD VERSION
 inb_cluster_NFS_status_simple.sh -T > ./tmp_nfs_status.txt
 sed 's/$/<br \/>/g' ./tmp_nfs_status.txt > tmp_nfs_status.html
 
