@@ -10,6 +10,7 @@ if [ -z $(which qstat) ]
 then
  source /opt/sge/fmrilab/common/settings.sh 
 fi
+source /etc/profile.d/modules.sh
 module load inb_tools
 
 # Put to-html on the path
@@ -33,7 +34,7 @@ tmp_html=/misc/penfield/soporte/inb_monitor/tmp_index.html
 here=$(dirname $0)
 
 # Define timeout
-tout=60
+tout=110
 
 
 # Begin cretion of html file

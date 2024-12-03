@@ -1,6 +1,8 @@
 #!/bin/bash
 html=$1
 
+
+
 echo "<h2>Jobs in SGE queues<br /></h2>"  >> $html
 to-html "qstat -u '*'" >> $html
 
