@@ -34,12 +34,13 @@ tmp_html=/misc/penfield/soporte/inb_monitor/tmp_index.html
 here=$(dirname $0)
 
 # Define timeout
-tout=110
+tout=330
 
 
 # Begin cretion of html file
 echo "
 <html>
+ <meta http-equiv="refresh" content="5" >
  <body>
  <h1> Status of Don Clusterio <br /></h1>
 
