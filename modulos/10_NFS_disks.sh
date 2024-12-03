@@ -12,7 +12,7 @@ file_flag=$(dirname $html)/ThereAreNFSErrors
 
 
 # OLD VERSION
-inb_cluster_NFS_status_simple.sh > ./tmp_nfs_status.txt
+inb_cluster_NFS_status_simple.sh -T > ./tmp_nfs_status.txt
 sed 's/$/<br \/>/g' ./tmp_nfs_status.txt > tmp_nfs_status.html
 
 
